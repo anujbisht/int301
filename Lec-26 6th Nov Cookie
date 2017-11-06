@@ -1,0 +1,26 @@
+Cookie
+
+Setcookie
+	Name:- name="ABC";	// name=name and value = abc
+	value
+
+	#below points are optional
+	expiry:- time()+seconds	//time()+3600*24 for 1 day		//86400*30 for 1 month
+	
+	path:-	 
+	
+	Domain
+	
+	Security:-	http https = 0,1 respectively
+
+
+	setcookie($name,time()+3600)
+		if(isset($_COOKIE[name]))
+			echo"The value is".$_COOKIE[name]
+		else
+			echo"The Cookie Is Not Set"
+
+
+
+	#to delete cookie
+	setcookie($name,time()-3600,'/')
